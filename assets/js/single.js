@@ -30,7 +30,7 @@ function getRepoIssues(repo) {
         displayIssues(data);
 
         // check if api has paginated issues
-        if (response.headers.get('link')) {
+        if (response.headers.get('Link')) {
           displayWaring(repo);
         }
       });
